@@ -152,6 +152,191 @@ header {
     margin-left: -170px;
 }
 
+/* -----------------------Tecnologias------------------------*/
+#tecnologias {
+    background-color: #FAFAFA;
+    width: 100%;
+    min-height: 700px;
+    font-size: 16px;
+    color: #333333;
+}
+
+#tecnologias h1 {
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+#tecnologias h1::after {
+    content: '';
+    background-color: currentColor;
+    width: 40px;
+    height: 1px;
+    display: block;
+    margin: 3px 44%;
+}
+
+.tecs {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.tecs i {
+    font-size: 90px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contagem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+    margin: 10px auto;
+}
+
+.caixa-prog {
+    width: 350px;
+    height: 6px;
+    border-radius: 13px;
+    background-color: #bbb;
+    margin: 1px auto;
+    padding: 2px;
+}
+
+.progresso {
+    width: 105px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #333333;
+    animation: progresso 3s ;
+}
+
+.git {
+    width: 70px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #333333;
+    animation: git 3s ;
+}
+
+.boots {
+    width: 35px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #333333;
+    animation: boots 3s ;
+}
+
+.vermelho {
+    color: #CC362A;
+}
+
+.azul {
+    color: #34A3D5;
+}
+
+.amarelo {
+    color: #F8DB00;
+}
+
+.cinza {
+    color: #333333;
+}
+
+.coral {
+    color: #E94E32;
+}
+
+.roxo {
+    color: #6B45A8;
+}
+
+
+/* -----------------------KeyFrames------------------------*/
+
+@keyframes progresso {
+    from {width: 1px;} 
+    to {width: 105px;}
+ }
+
+ @keyframes git {
+    from {width: 1px;} 
+    to {width: 70px;}
+ }
+
+ @keyframes resp {
+    from {width: 1px;} 
+    to {width: 140px;}
+ }
+
+ @keyframes boots {
+    from {width: 1px;} 
+    to {width: 35px;}
+ }
+
+ #contato {
+    background-color: #FFF;
+    width: 100%;
+    min-height: 700px;
+    font-size: 16px;
+    color: #333333;
+ }
+
+ #contato h1 {
+    padding-top: 20px;
+    font-size: 40px;
+ }
+
+ #contato h1::after {
+    content: '';
+    background-color: currentColor;
+    width: 40px;
+    height: 1px;
+    display: block;
+    margin: 3px 46%;
+ }
+
+ #sub-contato {
+     display: flex;
+     justify-content: space-evenly;
+     margin: 70px auto;
+ }
+
+ #sub-contato i{
+    background-color: #232323;
+    color: #FAFAFA;
+    border-radius: 50%;
+    padding: 25px;
+ }
+
+ .group {
+    display: flex;
+    align-items: center;
+    text-align: left;
+ }
+
+ .group div {
+     margin-left: 10px;
+ }
+
+.group span {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.group p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 
 
 
