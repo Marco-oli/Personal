@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    color: #BEBEBE;
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(45deg, transparent 0%, transparent 27%,rgba(214, 214, 214,0.06) 27%, rgba(214, 214, 214,0.06) 38%,transparent 38%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 39%,rgba(214, 214, 214,0.06) 39%, rgba(214, 214, 214,0.06) 68%,transparent 68%, transparent 100%),linear-gradient(90deg, transparent 0%, transparent 74%,rgba(214, 214, 214,0.06) 74%, rgba(214, 214, 214,0.06) 79%,transparent 79%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    width: 100%;
+    min-height: 100vh; 
+    vertical-align: middle;
+}
+
+/* ids e classes */
+
+/* ----------------------- Menu ------------------------*/
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+
+}
+#menu a {
+    text-decoration: none;
+    color: #BEBEBE;
+    padding-left: 50px;
+    transition: all 0.5s;
+}
+
+#menu a:hover {
+    color: #F0FFFF;
+    
+}
+
+
+/* ----------------------- Perfil ------------------------*/
+#perfil {
+    margin-top: 250px;
+    letter-spacing: 10px;
+}
+
+#perfil h1 {
+    font-size: 45px;
+}
+
+#perfil p {
+    font-size: 20px;
+}
+
+#perfil img {
+    width: 220px;
+    border: 5px solid #BEBEBE;
+    border-radius: 50%;
+}
+
+#perfil h1::after {
+    content: '';
+    width: 250px;
+    height: 2px;
+    background-color: currentColor;
+    display: block;
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+/* -----------------------Sobre------------------------*/
+
+#sobre {
+    background-color: #fff;
+    min-height: 500px;
+    width: 100%;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 50px;
+    align-items: flex-start;
+}
+
+#sobre h2 {
+    font-weight: 700;;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    margin: 0 0 30px 0 ;
+    text-align: start;
+}
+
+#sobre h2 span {
+    color: black;
+}
+
+#sobre p {
+    width: 425px;
+    text-align: start;
+    font-size: 17px; 
+    margin-bottom: 25px;
+}
+
+#sobre p span {
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* -----------------------Redes-sociais------------------------*/
+#redes-sociais {
+    margin: 50px auto;
+    text-align: start;
+}
+
+#redes-sociais a {
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    color: #232323;
+    border: 1px solid #888;
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+#redes-sociais a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* -----------------------Dados------------------------*/
+#dados {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    font-size: 16px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin-left: -170px;
+}
+
+
+
+
+
+
+
+
