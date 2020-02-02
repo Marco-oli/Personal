@@ -279,6 +279,7 @@ header {
     to {width: 35px;}
  }
 
+ /* -----------------------Contato------------------------*/
  #contato {
     background-color: #FFF;
     width: 100%;
@@ -335,6 +336,48 @@ header {
     font-size: 16px;
     font-weight: 400;
 }
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin: 20px
+}
+
+#form input {
+    height: 40px;
+    width: 400px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    margin: 10px;
+    color: #232323;
+    border: 1px solid #ddd;
+    font-family: sans-serif;
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+textarea {
+    height: 180px;
+    width: 820px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    margin: 10px;
+    color: #232323;
+    border: 1px solid #ddd;
+    font-family: sans-serif;
+}
+
+
+
+
 
 
 
