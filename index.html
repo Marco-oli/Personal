@@ -136,17 +136,17 @@
             <div id="sub-contato">
                 <div class="group">
                     <i class="fas fa-phone-alt"></i>
-                    <div >
+                    <div>
                         <span>Telefone</span>
                         <p>+55(21)96407-3491</p>
                     </div>
                 </div>
                 <div class="group">
                     <i class="fas fa-map-marker-alt"></i>
-                    <divgit>
+                    <div>
                         <span>Endereço</span>
                         <p>Rua Cândido Benicio 2935, Praça Seca - RJ</p>
-                    </divgit>
+                    </div>
                 </div>
                 <div class="group">
                     <i class="fas fa-envelope"></i>
@@ -156,6 +156,25 @@
                     </div>
                 </div>
             </div>
+            <form action="mailto:marcooli.pereira@gmail.com" method="post" enctype="text/plain">
+                <div id="form">
+                    <div>
+                        <input type="text" name="nome" id="nome" placeholder="Nome"  />
+                        <span id="erro"></span>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email" >
+                        <span id="erro"></span>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" ></textarea>
+                    <span id="erro"></span>
+                </div>
+                <div>
+                    <button type="submit" value="Enviar" id="btn">Enviar</button>
+                </div>
+            </form>
         </section>
         <!--<footer>
             
