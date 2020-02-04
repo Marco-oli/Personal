@@ -1,3 +1,5 @@
+// Animção da pagina
+
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
@@ -18,4 +20,40 @@ if(target.length) {
     window.addEventListener('scroll', function(){
         animeScroll();
     })
+}
+
+// Validação do Formulário
+
+const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const mensagem = document.getElementById('mensagem');
+const erro = document.getElementById('erro');
+
+function validar() {
+    if(nome.value === '') {
+        erro.innerHTML = 'Digite seu nome';
+        erro.style.color = 'red';
+        nome.style.border = '1px solid red';
+        return false
+    } 
+
+    if(email.value === '') {
+        erro.innerHTML = 'Digite seu email';
+        erro.style.color = 'red';
+        email.style.border = '1px solid red';
+        return false
+    }
+
+    if(mensagem.value === '') {
+        erro.innerHTML = 'Digite seu nome';
+        erro.style.color = 'red';
+        mensagem.style.border = '1px solid red';
+        return false
+    }
+
+    if(nome != "" && email != "" && mensagem != "") {
+        erro.innerHTML = 'Envie sua mensagem';
+        erro.style.color = 'green';
+
+    }
 }
