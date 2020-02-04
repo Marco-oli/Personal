@@ -72,6 +72,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        overflow: hidden;
     }
 
     #wpp {
@@ -152,7 +153,20 @@
 @media screen and (max-width: 576px) {
 
     header {
-        min-height: 144vh;
+        min-height: 100vh;
+    }
+
+    #wpp {
+        bottom: 45px;
+        left: 11px;
+        font-size: 40px;
+    }
+
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     #perfil {
@@ -196,14 +210,13 @@
     }
 
     #redes-sociais {
-        margin: 50px auto;
-        text-align: center;
+        margin: 50px;
     }
 
     #dados {
-        font-size: 13px;
-        margin: 30px auto;
-        max-width: 82%;
+        font-size: 16px;
+        margin: 20px auto;
+        max-width: 50%;
     }
 
     #form {
@@ -215,8 +228,89 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    body {
-        min-width: 150%;
+@media screen and (max-width: 375px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #wpp {
+        bottom: 10px;
+        left: 11px;
+        font-size: 40px;
+        }
+
+    #menu {
+        font-size: 16px;
+    }
+
+    #perfil img {
+        width: 160px;
+        margin: 0;
+    }
+
+    #sobre h2 {
+        font-size: 22px;
+        max-width: 85%;
+        margin: 20px auto;
+    }
+
+    #sobre p {
+        font-size: 13px;
+        max-width: 60%;
+        margin-left: 35px;
+    }
+
+    #redes-sociais {
+        margin: 30px 10px;
+    }
+
+    #dados {
+        font-size: 13px;
+        margin: 20px -20px;
+        max-width: 50%;
+    }
+
+    #tecnologias h1 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .tecs i {
+        font-size: 75px;
+        margin-bottom: 10px;
+    }
+
+    .caixa-prog {
+        width: 265px;
+        height: 6px;
+        border-radius: 13px;
+        background-color: #bbb;
+        margin: 1px auto;
+        padding: 2px;
+    }
+
+    #contato h1 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    #sub-contato i {
+        padding: 18px;
+    }
+
+    .group p {
+        font-size: 13px;
+    }
+
+    #form input {
+        width: 250px;
+    }
+
+    textarea {
+        width: 275px;
     }
 }
+
