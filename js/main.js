@@ -24,10 +24,11 @@ if(target.length) {
 
 // Validação do Formulário
 
-const nome = document.getElementById('nome');
+/*const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const mensagem = document.getElementById('mensagem');
 const erro = document.getElementById('erro');
+const enviar = document.getElementById('enviar');
 
 function validar() {
     if(nome.value === '') {
@@ -35,6 +36,7 @@ function validar() {
         erro.style.color = 'red';
         nome.style.border = '1px solid red';
         return false
+
     } 
 
     if(email.value === '') {
@@ -56,4 +58,4 @@ function validar() {
         erro.style.color = 'green';
 
     }
-}
+}*/
