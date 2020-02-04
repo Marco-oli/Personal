@@ -106,9 +106,8 @@
     }
 
     #dados {
-        margin: 0 228px;
-        width: 380px;
-        padding-left: 90px;
+        margin: 0 auto;
+        padding-right: 145px;
     }
 
     #descricao {
@@ -150,12 +149,12 @@
 
 /* -----------------------Small devices------------------------*/
 @media (max-width: 576px) {
-    body {
-       min-width: 412px; 
+    header {
+        min-height: 144vh;
     }
 
-    header {
-        min-height: 110vh;
+    #container {
+        max-width: 540px;
     }
 
     #perfil {
@@ -215,5 +214,19 @@
 
     textarea {
         width: 380px;
+    }
+}
+
+/*-----------------------Extra Small devices------------------------*/
+@media (max-width: 420px) {
+    #container {
+        max-width: 420px;
+    }
+
+    #dados {
+        font-size: 13px;
+        margin: 30px auto;
+        width: 300px;
+        padding-left: 70px;
     }
 }
