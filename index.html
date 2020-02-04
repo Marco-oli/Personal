@@ -158,20 +158,23 @@
                     </div>
                 </div>
             </div>
-            <form action="mailto:marcooli.pereira@gmail.com" method="post" enctype="text/plain">
+            <form action="mailto:marcooli.pereira@gmail.com" method="post" enctype="text/plain" id="enviar">
                 <div id="form">
                     <div>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" required/>
+                        <input type="text" name="nome" id="nome" placeholder="Nome"/>
                     </div>
                     <div>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email" >
                     </div>
                 </div>
                 <div>
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
                 </div>
                 <div>
-                    <button type="submit" value="Enviar" id="btn">Enviar</button>
+                    <span id="erro"></span>
+                </div>
+                <div>
+                    <button type="submit" value="Enviar" id="btn" onclick="validar()">Enviar</button>
                 </div>
             </form>
         </section>
