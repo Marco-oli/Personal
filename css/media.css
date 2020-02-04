@@ -1,0 +1,219 @@
+/* -----------------------Large Devices------------------------*/
+
+@media (max-width: 1200px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    #wpp {
+        left: 60px;
+        bottom: 140px;
+    }
+
+    #menu {
+        font-size: 30px;
+    }
+
+    #perfil img {
+        width: 400px;
+    }
+
+    #perfil h1 {
+        font-size: 60px;
+    }
+
+    #perfil p {
+        font-size: 30px;
+    }
+
+    #sobre {
+        font-size: 22px;
+    }
+
+    #descricao {
+        margin-left: -53px;
+    }
+
+    #dados {
+        width: 380px;
+        padding-left: 115px;
+    }
+
+    #tecnologias h1::after {
+        margin-left: 39%;
+    }
+
+    .tecs {
+        display: grid;
+    }
+
+
+    .tecs div {
+        margin-bottom: 15px;
+    }
+
+    .group div {
+        width: 180px;
+    }
+
+    #contato h1::after {
+        margin-left: 43%;
+    }
+}
+
+/* -----------------------Medium Devices------------------------*/
+@media (max-width: 768px) {
+    
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #wpp {
+        bottom: 230px;
+        left: 30px;
+    }
+
+    #menu {
+        font-size: 25px;
+    }
+
+    #menu-itens {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-top: 18px;
+    }
+
+    #perfil { 
+        letter-spacing: 5px;
+    }
+
+    #perfil img {
+        width: 335px;
+    }
+
+    #perfil h1 {
+        font-size: 50px;
+    }
+
+    #sobre {
+        display: block;
+    }
+
+    #dados {
+        margin: 0 228px;
+        width: 380px;
+        padding-left: 90px;
+    }
+
+    #descricao {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #tecnologias h1::after {
+        margin-left: 36%;
+    }
+
+
+    #sub-contato {
+        display: inline-block;
+    }
+
+    #contato h1::after {
+        margin-left: 41%;
+    }
+
+    .group {
+        padding: 15px
+    }
+
+    #form input {
+        width: 340px;
+        margin: 15px;
+    }
+
+    #btn {
+        margin-bottom: 15px;
+        
+    }
+
+    textarea {
+        width: 600px;
+    }
+}
+
+/* -----------------------Small devices------------------------*/
+@media (max-width: 576px) {
+    body {
+       min-width: 412px; 
+    }
+
+    header {
+        min-height: 110vh;
+    }
+
+    #perfil {
+        margin-top: 75px;
+    }
+
+    #perfil img {
+        width: 215px;
+        margin-top: 100px;
+    }
+
+    #perfil h1 {
+        font-size: 30px;
+    }
+
+    #perfil h1::after {
+        width: 160px;
+    }
+
+    #perfil p {
+        font-size: 16px;
+    }
+
+    #sobre {
+        min-height: 107vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sobre h2 {
+        font-size: 27px;
+        max-width: 85%;
+        margin: 20px auto;
+    }
+
+    #sobre p {
+        font-size: 15px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #redes-sociais {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    #dados {
+        font-size: 13px;
+        margin: 30px auto;
+        max-width: 82%;
+    }
+
+    #form {
+        display: block;
+    }
+
+    textarea {
+        width: 380px;
+    }
+}
