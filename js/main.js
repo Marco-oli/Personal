@@ -1,3 +1,30 @@
+// Scroll Suave no Menu
+const menuItens = document.querySelectorAll('#menu-itens a');
+
+menuItens.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+})
+
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+}
+
+function scrollToIdOnClick(event) {
+    event.preventDefault()
+    const to = getScrollTopByHref(event.target)
+    scrollToPosition(to);
+}
+
+function scrollToPosition(to) {
+    window.scroll({
+        top: to,
+        behavior: 'smooth'
+    });
+}
+
+
+
 // Animção da pagina
 
 const target = document.querySelectorAll('[data-anime]');
@@ -21,41 +48,3 @@ if(target.length) {
         animeScroll();
     })
 }
-
-// Validação do Formulário
-
-/*const nome = document.getElementById('nome');
-const email = document.getElementById('email');
-const mensagem = document.getElementById('mensagem');
-const erro = document.getElementById('erro');
-const enviar = document.getElementById('enviar');
-
-function validar() {
-    if(nome.value === '') {
-        erro.innerHTML = 'Digite seu nome';
-        erro.style.color = 'red';
-        nome.style.border = '1px solid red';
-        return false
-
-    } 
-
-    if(email.value === '') {
-        erro.innerHTML = 'Digite seu email';
-        erro.style.color = 'red';
-        email.style.border = '1px solid red';
-        return false
-    }
-
-    if(mensagem.value === '') {
-        erro.innerHTML = 'Digite seu nome';
-        erro.style.color = 'red';
-        mensagem.style.border = '1px solid red';
-        return false
-    }
-
-    if(nome != "" && email != "" && mensagem != "") {
-        erro.innerHTML = 'Envie sua mensagem';
-        erro.style.color = 'green';
-
-    }
-}*/
