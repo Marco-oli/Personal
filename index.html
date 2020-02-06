@@ -13,12 +13,22 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
     <script src="https://kit.fontawesome.com/bb5a28c4c3.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157870898-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157870898-1');
+    </script>
 </head>
 
 <body>
     <div id="container">
         <header>
-            <a id="wpp" href="https://api.whatsapp.com/send?phone=5521964073491" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a id="wpp" href="https://api.whatsapp.com/send?phone=5521964073491" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
             <nav id="menu">
                 <h3>Developer</h3>
                 <div id="menu-itens">
@@ -161,7 +171,7 @@
             <form action="mailto:marcooli.pereira@gmail.com" method="post" enctype="text/plain" id="enviar">
                 <div id="form">
                     <div>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" required/>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
                     </div>
                     <div>
                         <input type="email" name="email" id="email" placeholder="Email" required>
@@ -174,7 +184,7 @@
                     <span id="erro"></span>
                 </div>
                 <div>
-                    <button type="submit" value="Enviar" id="btn" >Enviar</button>
+                    <button type="submit" value="Enviar" id="btn">Enviar</button>
                 </div>
             </form>
         </section>
